@@ -253,11 +253,11 @@ public:
         m_eps(Eigen::NumTraits<Scalar>::epsilon()),
         m_eps23(Eigen::numext::pow(m_eps, Scalar(2.0) / 3))
     {
-        if(nev < 1 || nev > m_n - 1)
-            throw std::invalid_argument("nev must satisfy 1 <= nev <= n - 1, n is the size of matrix");
+        /* if(nev < 1 || nev > m_n - 1) */
+        /*     throw std::invalid_argument("nev must satisfy 1 <= nev <= n - 1, n is the size of matrix"); */
 
-        if(ncv < nev || ncv > m_n)
-            throw std::invalid_argument("ncv must satisfy nev < ncv <= n, n is the size of matrix");
+        /* if(ncv < nev || ncv > m_n) */
+        //    throw std::invalid_argument("ncv must satisfy nev < ncv <= n, n is the size of matrix");
     }
 
     ///

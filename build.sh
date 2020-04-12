@@ -1,7 +1,8 @@
 if [ -d "build" ]; then
     rm -fr build
-    mkdir build
 fi
+
+mkdir build
 
 cmake -S . -B build
 cd build
